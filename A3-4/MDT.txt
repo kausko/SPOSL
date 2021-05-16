@@ -5,5 +5,7 @@ MEND
 MOVER	(P,3)	(P,1)	
 ADD	(P,3)	(P,2)	
 MOVEM	(P,3)	(P,1)	
-ONE	O,	9,	&E=CREG
++MOVER	AREG	(P,2)	
++ADD	AREG	9
++MOVEM	AREG	(P,2)	
 MEND

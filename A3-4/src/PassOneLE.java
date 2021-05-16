@@ -2,9 +2,8 @@ import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
-import java.util.stream.Collectors;
 
-public class PassOne {
+public class PassOneLE {
 
     private BufferedReader br;
     private FileWriter MNT, MDT, KPDT, PNT, IC;
@@ -14,7 +13,7 @@ public class PassOne {
     private String [] parts;
     private int MDTP, KPDTP, paramNo, PP, KP, flag;
 
-    public PassOne() throws IOException {
+    public PassOneLE() throws IOException {
         br = new BufferedReader(new FileReader("input.asm"));
         MNT = new FileWriter("MNT.txt");
         MNT.write("N\tPP\tKP\tMDTP|KPDTP\n");
@@ -34,7 +33,7 @@ public class PassOne {
 
     public static void main(String[] args) throws IOException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
 	// write your code here
-        PassOne passone = new PassOne();
+        PassOneLE passone = new PassOneLE();
         passone.parseFile();
     }
 

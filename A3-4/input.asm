@@ -9,7 +9,7 @@
     MOVER	&O, &T
     ADD	&O, &W
     MOVEM	&O, &T
-    ONE	O, 9, &E=CREG
+    ONE	&W, 9
     MEND
     START
     READ	O
